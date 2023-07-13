@@ -1,4 +1,6 @@
-
+@extends('_layout.cork')
+        
+@section('content')
 <html>
     <head>
         <meta charset="UTF-8">

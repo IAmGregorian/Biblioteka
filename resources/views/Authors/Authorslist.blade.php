@@ -1,3 +1,6 @@
+@extends('_layout.cork')
+        
+@section('content')
 <!DOCTYPE html>
 <html>
     <head>

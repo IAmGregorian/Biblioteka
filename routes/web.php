@@ -18,8 +18,10 @@ use Illuminate\Support\Facades\Route;
     return view('welcome');
 });*/
 
-Route::get('/', [App\Http\Controllers\BooksController::class, 'index'])->name('kniga.lista');
-Route::get('/avtor', [App\Http\Controllers\AuthorsController::class, 'index'])->name('avtor.lista');
-Route::get('/knjiga/{bookId}', [App\Http\Controllers\BooksController::class, 'show'])->name('kniga.prikazi');
-Route::get('/avtor/{authorId}', [App\Http\Controllers\AuthorsController::class, 'show'])->name('avtor.prikazi');
+Route::get('/knjige', [App\Http\Controllers\BooksController::class, 'index'])->name('kniga.lista');
+Route::get('/avtori', [App\Http\Controllers\AuthorsController::class, 'index'])->name('avtor.lista');
+Route::get('/knjige/{bookId}', [App\Http\Controllers\BooksController::class, 'show'])->name('kniga.prikazi');
+Route::get('/avtori/{authorId}', [App\Http\Controllers\AuthorsController::class, 'show'])->name('avtor.prikazi');
 Route::get('/users', [App\Http\Controllers\UsersController::class, 'index']);
+
+Route::get('/', function(){return view('welcome');});

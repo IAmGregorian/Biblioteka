@@ -1,3 +1,6 @@
+@extends('_layout.cork')
+        
+@section('content')
 <h1> Книги на авторот {{ $author->name }} </h1>
 <h2> Бигорафија на авторот: {{ $author->biography }} </h2>
 @if (count($author->book)==1)
