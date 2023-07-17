@@ -14,3 +14,4 @@
     <ul>
 @endif
 <a href="{{ route('kniga.lista') }}">Назад до сите книги</a>
+@endsection
