@@ -201,7 +201,7 @@
                     <a href="javascript:void(0);" class="nav-link dropdown-toggle user" id="userProfileDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="avatar-container">
                             <div class="avatar avatar-sm avatar-indicators avatar-online">
-                                <img alt="avatar" src="{{ asset ('assets/src/assets/img/profile-30.png') }}" class="rounded-circle">
+                                <!-- <img alt="avatar" src="" class="rounded-circle"> -->
                             </div>
                         </div>
                     </a>
@@ -213,8 +213,7 @@
                                     &#x1F44B;
                                 </div>
                                 <div class="media-body">
-                                    <h5>Shaun Park</h5>
-                                    <p>Project Leader</p>
+                                    <h5>Shawn Mendes</h5>
                                 </div>
                             </div>
                         </div>
@@ -230,7 +229,7 @@
                         </div>
                         <div class="dropdown-item">
                             <a href="auth-boxed-lockscreen.html') }}">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg> <span>Lock Screen</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg> <span>?1/fasdFTBA?</span>
                             </a>
                         </div>
                         <div class="dropdown-item">

@@ -17,6 +17,8 @@ class BooksController extends Controller
         //
         $data['books']=Books::all();
         return view("Books.Bookslist",$data);
+
+        
     }
 
     /**
