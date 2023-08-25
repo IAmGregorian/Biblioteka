@@ -6,7 +6,7 @@
 <h2>Телефон:{{$user->broj}}</h2>
 <table>
   <tr> 
-    <td>tuja treba da stoiv iznajmeni knjige :) </td>
+    <td>tuja treba da stoiv iznajmeni knjige :) (odgovor:Ke napravu (nekad (valjda) ) )</td>
   </tr>
 </table>
 <a href="{{ route('korisnik.lista') }}">Назад до сите корисници</a>

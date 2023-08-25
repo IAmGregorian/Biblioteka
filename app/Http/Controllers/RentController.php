@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Users;
+use App\Models\Rent;
 use Illuminate\Http\Request;
 
-class UsersController extends Controller
+class RentController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +15,6 @@ class UsersController extends Controller
     public function index()
     {
         //
-        $data['users']=Users::all();
-        return view("Users.Userslist",$data);
     }
 
     /**
@@ -43,25 +41,21 @@ class UsersController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Users  $users
+     * @param  \App\Models\Rent  $rent
      * @return \Illuminate\Http\Response
      */
-    public function show(Users $users, $userId)
+    public function show(Rent $rent)
     {
         //
-        $data['user'] = Users::find($userId);
-        $data['books'] = Books::all();
-        $data['iznajmuvanje'] = RentRead::where("users_id", $userId)->get();
-        return view('Users.users_show', $data);
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Users  $users
+     * @param  \App\Models\Rent  $rent
      * @return \Illuminate\Http\Response
      */
-    public function edit(Users $users)
+    public function edit(Rent $rent)
     {
         //
     }
@@ -70,10 +64,10 @@ class UsersController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Users  $users
+     * @param  \App\Models\Rent  $rent
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Users $users)
+    public function update(Request $request, Rent $rent)
     {
         //
     }
@@ -81,10 +75,10 @@ class UsersController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Users  $users
+     * @param  \App\Models\Rent  $rent
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Users $users)
+    public function destroy(Rent $rent)
     {
         //
     }
