@@ -15,7 +15,7 @@ class Books extends Model
     }
 
     public function picture(){
-        return $this->belongsToMany(Images::class,'books_has_pictures', 'books_id', 'pictures_id');
+        return $this->belongsToMany(Pictures::class,'books_has_pictures', 'books_id', 'pictures_id');
     }
 
 }

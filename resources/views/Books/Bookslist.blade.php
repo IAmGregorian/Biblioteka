@@ -24,7 +24,7 @@
                 <td>
                 <div class="media">
                         <div class="avatar me-2">
-                            <img alt="avatar" src="../src/assets/img/profile-7.jpeg" class="rounded-circle" />
+                            <img alt="cover" src="{{ asset('assets/images/' . $book->picture[0]->name)}}.jpg" class="rounded-circle" />
                         </div>
                         <div class="media-body align-self-center">
                             <h5><a href="{{ route('kniga.prikazi',['bookId' => $book->id]) }}">{{ $book->title }} </a></h5>

@@ -2,6 +2,9 @@
         
 @section('content')
 <h1>{{$book->title}}</h1>
+@foreach($book->picture as $picture)
+<img src="{{ asset('assets/images/' . $book->picture[0]->name)}}.jpg">
+@endforeach
 <h2>{{$book->barcode}}</h2>
 <h2>Број на страни:{{$book->pages}}</h2>
 @if (count($book->author)==1)
