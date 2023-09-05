@@ -32,7 +32,9 @@
                 </td>
                 <td class="text-center">
                     <div class="action-btns">
-                        <button>Изнајми</button>
+                        <form method="POST" action="/iznajmi">
+                        <button type="submit">Изнајми</button>
+                    </form>
                     </div>
                 </td>
             </tr>
