@@ -24,5 +24,7 @@ Route::get('/knjige/{bookId}', [App\Http\Controllers\BooksController::class, 'sh
 Route::get('/avtori/{authorId}', [App\Http\Controllers\AuthorsController::class, 'show'])->name('avtor.prikazi');
 Route::get('/korisnici', [App\Http\Controllers\UsersController::class, 'index'])->name('korisnik.lista');
 Route::get('/korisnici/{userId}', [App\Http\Controllers\UsersController::class, 'show'])->name('korisnik.prikazi');
+Route::post('/iznajmi', [App\Http\Controllers\RentController::class, 'iznajmi'])->name('iznajmuvanje');
+Route::post('/vrati', [App\Http\Controllers\RentController::class, 'vrati'])->name('vrakjanje');
 
 Route::get('/', function(){return view('welcome');});

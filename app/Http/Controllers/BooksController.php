@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Books;
 use App\Models\RentView;
+use App\Models\Users;
 use Illuminate\Http\Request;
 
 class BooksController extends Controller
@@ -54,6 +55,7 @@ class BooksController extends Controller
         //
         $data['book'] = Books::find($bookId);
         $data['iznajmuvanja'] = RentView::where('books_id', $bookId)->get();
+        $data['users'] = Users::all();
         return view('Books.books_show', $data);
     }
 
